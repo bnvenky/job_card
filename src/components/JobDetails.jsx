@@ -4,7 +4,7 @@ const JobDetails = () => {
   const { selectedJob } = useJob(); // Use the context
 
   // Check if selectedJob is not available
-  if (!selectedJob) return <p>Loading...</p>;
+  if (!selectedJob) return <center><p className='align-middle'>Loading...</p></center>;
 
   // Log selectedJob for debugging purposes
   console.log(selectedJob);
